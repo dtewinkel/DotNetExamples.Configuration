@@ -1,0 +1,53 @@
+{
+  "DemoOptions": {
+    "KeyVaultUri": null,
+    "AppConfigurationUri": null,
+    "AzureCredentialProvider": "DefaultAzureCredential"
+  },
+  "ConfigDataScoped": {
+    "FromSource": "functionSettings.json",
+    "Nested": {
+      "IntValue1": 1
+    }
+  },
+  "ConfigDataSingleton": {
+    "FromSource": "functionSettings.json",
+    "Nested": {
+      "IntValue1": 2
+    }
+  },
+  "ConfigDataOptions": {
+    "FromSource": "functionSettings.json",
+    "Nested": {
+      "IntValue1": 3
+    }
+  },
+  "ConfigDataOptionsSnapshot": {
+    "FromSource": "functionSettings.json",
+    "Nested": {
+      "IntValue1": 4
+    }
+  },
+  "ConfigDataOptionsMonitor": {
+    "FromSource": "functionSettings.json",
+    "Nested": {
+      "IntValue1": 5
+    }
+  },
+  "ConfigDataOptionsValidation": {
+    "FromSource": "functionSettings.json",
+    "MustHave": "Yes",
+    "Url": "http://example.com/path",
+    "Email": "john.doe@example.com",
+    "Nested": {
+      "IntValue1": 6
+    }
+  },
+  "ConfigDataOptionsValidationStartup": {
+    "FromSource": "functionSettings.json",
+    "MustHave": "Yes",
+    "Nested": {
+      "IntValue1": 7
+    }
+  }
+}

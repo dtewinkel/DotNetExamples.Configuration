@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "DotNetExamples.Configuration.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7214 --dotnet-isolated",
+      "environmentVariables": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+      }
+    }
+  }
+}
