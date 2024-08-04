@@ -9,6 +9,7 @@ public class NestedConfigData
     [Range(0, 100)]
     public int IntValue1 { get; set; }
 
+    [Range(-10_000, 10_000)]
     public int? IntValue2 { get; set; }
 }
 

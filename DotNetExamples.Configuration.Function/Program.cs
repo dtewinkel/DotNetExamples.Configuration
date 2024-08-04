@@ -1,17 +1,18 @@
 using DotNetExamples.Configuration.Common;
-using DotNetExamples.Configuration.Function;
 using Microsoft.Extensions.Hosting;
 
 new HostBuilder()
     .ConfigureFunctionsWebApplication()
     
-    .ConfigureAppConfiguration(builder =>
+    .ConfigureAppConfiguration((context, builder) =>
     {
-        builder.AddProviders();
+        // Add providers to the application. Specifying the base name of the settings files.
+        builder.AddProviders<Program>("functionSettings", context.HostingEnvironment.EnvironmentName);
     })
 
     .ConfigureServices((context, services) =>
     {
+        // Set up the configuration, based on the configuration providers defined earlier.
         services.AddDemoConfiguration(context.Configuration);
     })
 

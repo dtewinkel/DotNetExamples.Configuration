@@ -1,0 +1,11 @@
+{
+  "ConfigurationProviderOptions": {
+    "AzureCredentialProvider": "DefaultAzureCredential"
+  },
+  "ConfigDataOptions": {
+    "FromSource": "functionSettings.Development.json",
+    "Nested": {
+      "IntValue2": 93
+    }
+  }
+}

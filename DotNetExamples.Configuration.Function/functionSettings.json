@@ -1,5 +1,5 @@
 {
-  "DemoOptions": {
+  "ConfigurationProviderOptions": {
     "KeyVaultUri": null,
     "AppConfigurationUri": null,
     "AzureCredentialProvider": "DefaultAzureCredential"
